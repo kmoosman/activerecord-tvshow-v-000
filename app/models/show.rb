@@ -13,7 +13,7 @@ class Show < ActiveRecord::Base
   end
 
   def self.lowest_rating
-    Show.where("rating = ?", Show.highest_rating).first
+    Show.where("rating = ?", Show.lowest_rating).first
   end
 
 end
